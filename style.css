@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --starwberry-red: hsl(354, 84%, 57%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 1rem;
+  display: grid;
+  background-color: hsl(217, 100%, 97%);
+  font-family: "Ubuntu", sans-serif;
+}
+main {
+  width: 55rem;
+  height: 38rem;
+  place-self: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+nav {
+  float: left;
+  width: 17rem;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  display: grid;
+  background-size: cover;
+}
+nav ul {
+  margin-block: 3rem;
+  display: grid;
+  gap: 2rem;
+  align-content: start;
+}
+nav ul li {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  height: fit-content;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+nav ul li .step {
+  border: 1px solid white;
+  padding: 1rem;
+  height: 18px;
+  width: 18px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.desc .number {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.step_title {
+  font-weight: 700;
+}
+
+.step {
+  display: grid;
+  padding: 2rem 5rem;
+  width: fit-content;
+}
+.step h1 {
+  color: var(--marine-blue);
+  margin-block: 0.5rem;
+}
+.step p {
+  margin-top: 0;
+  color: var(--cool-gray);
+  font-weight: 500;
+  font-size: 14px;
+}
+form {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.input_value {
+  display: grid;
+  gap: 7px;
+}
+.input_value label {
+  color: var(--marine-blue);
+  font-weight: 500;
+}
+form input {
+  border-radius: 10px;
+  border: 1px solid var(--cool-gray);
+  outline-width: 1px;
+  outline-color: transparent;
+  padding: 1rem;
+  color: var(--marine-blue);
+  font-weight: 600;
+  font-size: 16px;
+}
+form input:focus {
+  border: 2px solid var(--purplish-blue);
+  outline-width: 0;
+}
+form input:invalid {
+  border: 2px solid var(--starwberry-red);
+}
+form button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: var(--purplish-blue);
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
